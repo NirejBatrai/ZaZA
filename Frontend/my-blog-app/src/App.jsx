@@ -5,6 +5,9 @@ import NotFound from "./Pages/NotFound";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ProSidebarProvider } from "react-pro-sidebar";
+
+import { Provider } from "react-redux";
+
 import "./App.css";
 
 function App() {
@@ -13,6 +16,7 @@ function App() {
   return (
     <>
       <ToastContainer />
+      <Provider></Provider>
       <ProSidebarProvider>
         <BrowserRouter>
           <Routes>
