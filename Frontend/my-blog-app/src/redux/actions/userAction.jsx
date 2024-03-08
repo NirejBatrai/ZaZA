@@ -79,7 +79,7 @@ export const userProfileAction = (user) => async (dispatch) => {
 };
 
 //lOGOUT action
-export const userLogoutAction = (user) => async (dispatch) => {
+export const userLogoutAction = () => async (dispatch) => {
   dispatch({ type: USER_LOGOUT_REQUEST });
   try {
     localStorage.removeItem("userInfo");
